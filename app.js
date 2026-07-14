@@ -1,35 +1,125 @@
 const mutationCatalog = [
   {
-    name: "EGFR L858R",
-    ids: ["EGFR-L858R", "EGFRL858R", "L858R"],
-    solution:
-      "Targeted therapy with an EGFR inhibitor such as osimertinib may be appropriate for eligible patients. Confirm with a specialist and review resistance testing.",
+    name: "Point Mutation — Curiosity↑",
+    name: "CUR1 Point Mutation",
+    ids: ["CUR1", "CUR-1", "curiosity"],
+    solution: "Small persistent increase to chance of novel insight.",
   },
   {
-    name: "BRAF V600E",
-    ids: ["BRAF-V600E", "BRAFV600E", "V600E"],
-    solution:
-      "A BRAF-directed combination such as dabrafenib plus trametinib is a common approach in eligible cases. Clinical context and tumor type matter greatly.",
+    name: "Gene Duplication — Parallel Inquiry",
+    name: "DUP1 Gene Duplication",
+    ids: ["DUP1", "DUP-1", "parallel-inquiry"],
+    solution: "Run two simultaneous experiments; doubles small-discovery chance briefly.",
   },
   {
-    name: "KRAS G12C",
-    ids: ["KRAS-G12C", "KRASG12C"],
-    solution:
-      "Targeted therapy options such as sotorasib or adagrasib may be considered in appropriate patients after multidisciplinary review.",
+    name: "Promoter Upregulation — Focused Persistence",
+    name: "PROM1 Upregulation",
+    ids: ["PROM1", "PROM-1", "focused-persistence"],
+    solution: "Short-term boost to sustained exploration (longer experiment windows).",
   },
   {
-    name: "BRCA1",
-    ids: ["BRCA1", "BRCA-1"],
-    solution:
-      "Genetic counseling, risk assessment, and consideration of PARP inhibitor therapy or enhanced surveillance can be relevant depending on cancer type and stage.",
+    name: "Promoter Downregulation — Caution Allele",
+    name: "PROM2 Downregulation",
+    ids: ["PROM2", "PROM-2", "caution-allele"],
+    solution: "Reduces risk of catastrophic failures at cost of slower progress.",
   },
   {
-    name: "ALK fusion",
-    ids: ["ALK-FUSION", "ALK"],
-    solution:
-      "An ALK-targeted therapy such as alectinib or crizotinib may be appropriate when the fusion is confirmed and clinically relevant.",
+    name: "Missense Mutation — Method Tweak",
+    name: "MSN1 Missense",
+    ids: ["MSN1", "MSN-1", "method-tweak"],
+    solution: "Alters a protocol step to improve success probability for similar experiments.",
   },
-];
+  {
+    name: "Nonsense Mutation — Abrupt Halt",
+    name: "NSN1 Nonsense",
+    ids: ["NSN1", "NSN-1", "abrupt-halt"],
+    solution: "One experiment fails fast, revealing hidden failure modes for later avoidance.",
+  },
+  {
+    name: "Frame-Shift Insertion — Serendipity Spike",
+    name: "FSI1 Frameshift",
+    ids: ["FSI1", "FSI-1", "frameshift"],
+    solution: "High-variance outcome; small chance of breakthrough, larger chance of noise.",
+  },
+  {
+    name: "Copy Number Variation — Resource Amplification",
+    name: "CNV1 CopyNumber",
+    ids: ["CNV1", "CNV-1", "resource-amplification"],
+    solution: "Temporarily increases available reagents/equipment for extra trials.",
+  },
+  {
+    name: "Splice-site Mutation — Modular Recombine",
+    name: "SPL1 SpliceSite",
+    ids: ["SPL1", "SPL-1", "splice-recombine"],
+    solution: "Recombine two methods into a new hybrid with mixed benefits.",
+  },
+  {
+    name: "Translocation — Cross-Field Fusion",
+    name: "TRL1 Translocation",
+    ids: ["TRL1", "TRL-1", "translocation-fusion"],
+    solution: "Moves a technique from one domain to another, unlocking novel synergies.",
+  },
+  {
+    name: "Inversion — Reverse-Protocol",
+    name: "INV1 Inversion",
+    ids: ["INV1", "INV-1", "reverse-protocol"],
+    solution: "Run experiment backward to reveal hidden controls or dependencies.",
+  },
+  {
+    name: "Gain-of-Function — Rapid Modeling",
+    name: "GOF1 GainOfFunction",
+    ids: ["GOF1", "GOF-1", "rapid-modeling"],
+    solution: "Grants ability to run fast computational models that narrow hypotheses.",
+  },
+  {
+    name: "Loss-of-Function — Noise Filter",
+    name: "LOF1 LossOfFunction",
+    ids: ["LOF1", "LOF-1", "noise-filter"],
+    solution: "Removes a distracting variable, improving signal-to-noise in measurements.",
+  },
+  {
+    name: "Epistatic Interaction — Collaboration Allele",
+    name: "EPI1 Epistasis",
+    ids: ["EPI1", "EPI-1", "epistatic-interaction"],
+    solution: "Interaction with another mutation yields emergent, non-linear benefits.",
+  },
+  {
+    name: "Pleiotropic Effect — Broad Insight",
+    name: "PLE1 Pleiotropy",
+    ids: ["PLE1", "PLE-1", "broad-insight"],
+    solution: "Single result yields multiple modest benefits across research areas.",
+  },
+  {
+    name: "Retrotransposon Insertion — Legacy Recovery",
+    name: "RTI1 Retrotransposon",
+    ids: ["RTI1", "RTI-1", "legacy-recovery"],
+    solution: "Re-activate old archived methods to recover lost capabilities.",
+  },
+  {
+    name: "Methylation Change — Memory Bias",
+    name: "MET1 Methylation",
+    ids: ["MET1", "MET-1", "memory-bias"],
+    solution: "Alters retention of past results, increasing reuse of successful protocols.",
+  },
+  {
+    name: "RNA Editing Variant — Adaptive Protocol",
+    name: "RNA1 RNAEdit",
+    ids: ["RNA1", "RNA-1", "adaptive-protocol"],
+    solution: "Allows on-the-fly small adjustments to procedures mid-experiment.",
+  },
+  {
+    name: "Mobile Element Activation — Crowdsourced Gain",
+    name: "MEL1 MobileElement",
+    ids: ["MEL1", "MEL-1", "crowdsourced-gain"],
+    solution: "Triggers external data contributions that scale statistical power.",
+  },
+  {
+    name: "Conditional Allele — Delayed Revelation",
+    name: "COND1 Conditional",
+    ids: ["COND1", "COND-1", "delayed-revelation"],
+    solution: "Starts latent; after a time delay it unlocks a high-value insight.",
+  },
+  ];
 
 function normalize(value) {
   return String(value)
@@ -61,14 +151,15 @@ function renderResults(entries) {
       if (!match) {
         return `
           <article class="result-card">
-            <h3>${entry}</h3>
-            <p>No matching entry was found in this demo catalog. Try EGFR L858R, BRAF V600E, KRAS G12C, BRCA1, or ALK fusion.</p>
-          </article>
+              <h3>${entry}</h3>
+              <p>No matching entry was found in this catalog.</p>
+            </article>
         `;
       }
 
       return `
         <article class="result-card">
+          ${match.category ? `<div class="mut-category">${match.category}</div>` : ""}
           <h3>${match.name}</h3>
           <p><strong>Suggested direction:</strong> ${match.solution}</p>
         </article>
@@ -103,4 +194,4 @@ document.getElementById("mutationInput").addEventListener("keydown", (event) => 
   }
 });
 
-renderResults(["EGFR L858R", "BRAF V600E"]);
+renderResults([]);
