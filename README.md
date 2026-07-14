@@ -2,6 +2,10 @@
 
 A lightweight browser-based workspace for testing mutation-name or mutation-ID lookups.
 
+## Access the website
+
+https://mutationsolutions.netlify.app/
+
 ## Run locally
 
 From this folder, start a local server:
