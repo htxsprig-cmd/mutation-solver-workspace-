@@ -8,8 +8,8 @@ From this folder, start a local server:
 
 Mac/Linux:
 ``` bash
-cd C:\path\to\parent-folder
-python -m http.server 8000
+cd /path/to/parent-folder
+python3 -m http.server 8000
 ```
 Windows(CMD Prompt):
 ```bash
