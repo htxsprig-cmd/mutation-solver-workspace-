@@ -76,7 +76,16 @@ textarea {
   color: var(--text);
   font-size: 1rem;
   resize: vertical;
+  overflow-y: auto;
 }
+
+/* Placeholder hint styling */
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.85;
+}
+textarea::-webkit-input-placeholder { color: var(--muted); opacity: 0.85; }
+textarea:-ms-input-placeholder { color: var(--muted); opacity: 0.85; }
 
 textarea:focus {
   outline: 2px solid rgba(95, 209, 255, 0.3);
