@@ -1,125 +1,131 @@
 const mutationCatalog = [
   {
-    name: "Point Mutation — Curiosity↑",
-    name: "CUR1 Point Mutation",
-    ids: ["CUR1", "CUR-1", "curiosity"],
-    solution: "Small persistent increase to chance of novel insight.",
+    name: "EGFR L858R",
+    ids: ["EGFR-L858R", "EGFRL858R", "L858R"],
+    solution:
+      "Consider EGFR-targeted therapy where appropriate. Confirm tumor type, test methodology, and resistance status; discuss with a multidisciplinary team.",
   },
   {
-    name: "Gene Duplication — Parallel Inquiry",
-    name: "DUP1 Gene Duplication",
-    ids: ["DUP1", "DUP-1", "parallel-inquiry"],
-    solution: "Run two simultaneous experiments; doubles small-discovery chance briefly.",
+    name: "BRAF V600E",
+    ids: ["BRAF-V600E", "BRAFV600E", "V600E"],
+    solution:
+      "Evaluate tumor context for BRAF-directed therapy combinations. Verify mutation clonality and consult current oncology guidelines before treatment decisions.",
   },
   {
-    name: "Promoter Upregulation — Focused Persistence",
-    name: "PROM1 Upregulation",
-    ids: ["PROM1", "PROM-1", "focused-persistence"],
-    solution: "Short-term boost to sustained exploration (longer experiment windows).",
+    name: "KRAS G12C",
+    ids: ["KRAS-G12C", "KRASG12C"],
+    solution:
+      "KRAS G12C inhibitors may be appropriate in selected cases. Review the molecular report and prior therapies; confirm eligibility with the treating team.",
   },
   {
-    name: "Promoter Downregulation — Caution Allele",
-    name: "PROM2 Downregulation",
-    ids: ["PROM2", "PROM-2", "caution-allele"],
-    solution: "Reduces risk of catastrophic failures at cost of slower progress.",
+    name: "KRAS G12D",
+    ids: ["KRAS-G12D", "KRASG12D"],
+    solution:
+      "KRAS G12D is a common oncogenic variant. Treatment options differ from G12C; consider molecular tumor board review for therapeutic planning.",
   },
   {
-    name: "Missense Mutation — Method Tweak",
-    name: "MSN1 Missense",
-    ids: ["MSN1", "MSN-1", "method-tweak"],
-    solution: "Alters a protocol step to improve success probability for similar experiments.",
+    name: "BRCA1",
+    ids: ["BRCA1", "BRCA-1"],
+    solution:
+      "Determine germline versus somatic status. Refer for genetic counseling when germline mutations are suspected and consider guideline-based PARP inhibitor use.",
   },
   {
-    name: "Nonsense Mutation — Abrupt Halt",
-    name: "NSN1 Nonsense",
-    ids: ["NSN1", "NSN-1", "abrupt-halt"],
-    solution: "One experiment fails fast, revealing hidden failure modes for later avoidance.",
+    name: "BRCA2",
+    ids: ["BRCA2", "BRCA-2"],
+    solution:
+      "Assess germline status and family history. Genetic counseling is recommended when germline involvement is possible; follow evidence-based treatment pathways.",
   },
   {
-    name: "Frame-Shift Insertion — Serendipity Spike",
-    name: "FSI1 Frameshift",
-    ids: ["FSI1", "FSI-1", "frameshift"],
-    solution: "High-variance outcome; small chance of breakthrough, larger chance of noise.",
+    name: "ALK fusion",
+    ids: ["ALK-FUSION", "ALK"],
+    solution:
+      "Confirm the fusion with validated assays. ALK-directed therapies are standard in appropriate histologies; verify indications and sequencing with specialists.",
   },
   {
-    name: "Copy Number Variation — Resource Amplification",
-    name: "CNV1 CopyNumber",
-    ids: ["CNV1", "CNV-1", "resource-amplification"],
-    solution: "Temporarily increases available reagents/equipment for extra trials.",
+    name: "ROS1 fusion",
+    ids: ["ROS1-FUSION", "ROS1"],
+    solution:
+      "Confirm ROS1 rearrangement with orthogonal testing. ROS1-targeted agents may be appropriate in certain cancers; consult treatment protocols.",
   },
   {
-    name: "Splice-site Mutation — Modular Recombine",
-    name: "SPL1 SpliceSite",
-    ids: ["SPL1", "SPL-1", "splice-recombine"],
-    solution: "Recombine two methods into a new hybrid with mixed benefits.",
+    name: "RET fusion",
+    ids: ["RET-FUSION", "RET"],
+    solution:
+      "RET fusions can be actionable in specific tumor types. Verify the fusion and discuss targeted therapy options with the oncology team.",
   },
   {
-    name: "Translocation — Cross-Field Fusion",
-    name: "TRL1 Translocation",
-    ids: ["TRL1", "TRL-1", "translocation-fusion"],
-    solution: "Moves a technique from one domain to another, unlocking novel synergies.",
+    name: "NTRK fusion",
+    ids: ["NTRK-FUSION", "NTRK1", "NTRK2", "NTRK3"],
+    solution:
+      "NTRK fusions are rare but highly actionable across tumor types. Confirm by validated testing and consider NTRK inhibitors when indicated.",
   },
   {
-    name: "Inversion — Reverse-Protocol",
-    name: "INV1 Inversion",
-    ids: ["INV1", "INV-1", "reverse-protocol"],
-    solution: "Run experiment backward to reveal hidden controls or dependencies.",
+    name: "MET exon 14 skipping",
+    ids: ["METex14", "MET-EXON14", "MET-EX14"],
+    solution:
+      "MET exon 14 skipping mutations may be targetable. Confirm the alteration type and consult guidelines for MET-targeted therapy options.",
   },
   {
-    name: "Gain-of-Function — Rapid Modeling",
-    name: "GOF1 GainOfFunction",
-    ids: ["GOF1", "GOF-1", "rapid-modeling"],
-    solution: "Grants ability to run fast computational models that narrow hypotheses.",
+    name: "ERBB2 (HER2) amplification",
+    ids: ["ERBB2", "HER2", "HER2-AMP"],
+    solution:
+      "HER2 amplification may inform targeted therapy in certain cancers. Confirm amplification level and tumor context; follow established HER2 treatment pathways.",
   },
   {
-    name: "Loss-of-Function — Noise Filter",
-    name: "LOF1 LossOfFunction",
-    ids: ["LOF1", "LOF-1", "noise-filter"],
-    solution: "Removes a distracting variable, improving signal-to-noise in measurements.",
+    name: "PIK3CA E545K",
+    ids: ["PIK3CA-E545K", "PIK3CA-E545", "E545K"],
+    solution:
+      "PIK3CA hotspot mutations can be relevant for targeted approaches in select tumor types. Review molecular context and potential eligibility for PI3K-directed therapy.",
   },
   {
-    name: "Epistatic Interaction — Collaboration Allele",
-    name: "EPI1 Epistasis",
-    ids: ["EPI1", "EPI-1", "epistatic-interaction"],
-    solution: "Interaction with another mutation yields emergent, non-linear benefits.",
+    name: "PTEN loss",
+    ids: ["PTEN-LOSS", "PTEN"],
+    solution:
+      "PTEN loss may affect pathway activity and therapy response. Confirm loss by validated methods and discuss implications with pathology and oncology colleagues.",
   },
   {
-    name: "Pleiotropic Effect — Broad Insight",
-    name: "PLE1 Pleiotropy",
-    ids: ["PLE1", "PLE-1", "broad-insight"],
-    solution: "Single result yields multiple modest benefits across research areas.",
+    name: "TP53 mutation",
+    ids: ["TP53", "TP53-MUT"],
+    solution:
+      "TP53 alterations are common and variably actionable. Interpret in clinical context; consider prognostic implications rather than specific targeted therapy in many cases.",
   },
   {
-    name: "Retrotransposon Insertion — Legacy Recovery",
-    name: "RTI1 Retrotransposon",
-    ids: ["RTI1", "RTI-1", "legacy-recovery"],
-    solution: "Re-activate old archived methods to recover lost capabilities.",
+    name: "MSI-High / MMR deficiency",
+    ids: ["MSI-H", "MMR-DEF", "MLH1", "MSH2", "MSH6", "PMS2"],
+    solution:
+      "MSI-high or mismatch repair deficiency can predict response to immunotherapy in several tumor types. Confirm testing methodology and consult guidelines for treatment decisions.",
   },
   {
-    name: "Methylation Change — Memory Bias",
-    name: "MET1 Methylation",
-    ids: ["MET1", "MET-1", "memory-bias"],
-    solution: "Alters retention of past results, increasing reuse of successful protocols.",
+    name: "IDH1 R132H",
+    ids: ["IDH1-R132H", "IDH1-R132", "R132H"],
+    solution:
+      "IDH1 hotspot mutations may be targetable in specific contexts. Verify variant and disease setting; consult specialty guidance for targeted options.",
   },
   {
-    name: "RNA Editing Variant — Adaptive Protocol",
-    name: "RNA1 RNAEdit",
-    ids: ["RNA1", "RNA-1", "adaptive-protocol"],
-    solution: "Allows on-the-fly small adjustments to procedures mid-experiment.",
+    name: "IDH2 R140Q",
+    ids: ["IDH2-R140Q", "IDH2-R140"],
+    solution:
+      "IDH2 mutations can have therapeutic implications in particular malignancies. Confirm the alteration and review relevant clinical evidence.",
   },
   {
-    name: "Mobile Element Activation — Crowdsourced Gain",
-    name: "MEL1 MobileElement",
-    ids: ["MEL1", "MEL-1", "crowdsourced-gain"],
-    solution: "Triggers external data contributions that scale statistical power.",
+    name: "JAK2 V617F",
+    ids: ["JAK2-V617F", "JAK2V617F"],
+    solution:
+      "JAK2 V617F is commonly associated with myeloproliferative neoplasms. Correlate with hematologic findings and consult hematology for management.",
   },
   {
-    name: "Conditional Allele — Delayed Revelation",
-    name: "COND1 Conditional",
-    ids: ["COND1", "COND-1", "delayed-revelation"],
-    solution: "Starts latent; after a time delay it unlocks a high-value insight.",
+    name: "BCR-ABL1",
+    ids: ["BCR-ABL1", "BCRABL1"],
+    solution:
+      "BCR-ABL1 fusion is diagnostic in chronic myeloid leukemia and has established targeted therapies. Confirm with appropriate testing and consult hematology guidelines.",
   },
-  ];
+  {
+    name: "FLT3-ITD",
+    ids: ["FLT3-ITD", "FLT3ITD"],
+    solution:
+      "FLT3 internal tandem duplications have prognostic and therapeutic relevance in acute myeloid leukemia. Confirm mutation status and involve hematology/oncology specialists.",
+  },
+];
 
 function normalize(value) {
   return String(value)
@@ -159,7 +165,6 @@ function renderResults(entries) {
 
       return `
         <article class="result-card">
-          ${match.category ? `<div class="mut-category">${match.category}</div>` : ""}
           <h3>${match.name}</h3>
           <p><strong>Suggested direction:</strong> ${match.solution}</p>
         </article>
