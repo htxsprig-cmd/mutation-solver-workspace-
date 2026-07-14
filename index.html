@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutation Solver Workspace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">Mutation lookup workspace</p>
+        <h1>Paste a mutation name or ID</h1>
+        <p class="subtitle">
+          Enter one or more mutation names or identifiers and receive a mapped suggestion for follow-up care.
+        </p>
+      </header>
+
+      <section class="panel">
+        <label for="mutationInput">Mutation names or IDs</label>
+        <textarea id="mutationInput" placeholder="EGFR L858R&#10;BRAF V600E&#10;KRAS G12C"></textarea>
+        <div class="actions">
+          <button id="lookupBtn">Look up</button>
+          <button id="clearBtn" class="secondary">Clear</button>
+        </div>
+      </section>
+
+      <section class="panel results-panel">
+        <div class="results-header">
+          <h2>Results</h2>
+          <p>Demo data only — confirm any clinical direction with a qualified specialist.</p>
+        </div>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
