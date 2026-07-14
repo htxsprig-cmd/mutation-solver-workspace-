@@ -6,14 +6,17 @@ A lightweight browser-based workspace for testing mutation-name or mutation-ID l
 
 From this folder, start a local server:
 
+For Mac and Windows, in "path" you put Users, Linux is home. Then in "to" you put your username or whatever has the proper file for this. 
+
 Mac/Linux:
 ``` bash
-cd /path/to/parent-folder
+cd /path/to/mutation-solver-workspace-
 python3 -m http.server 8000
 ```
+
 Windows(CMD Prompt):
 ```bash
-cd C:\path\to\parent-folder
+cd C:\path\to\mutation-solver-workspace-
 python -m http.server 8000
 ```
 
